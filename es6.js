@@ -4,8 +4,16 @@
 
 
 function creaContatoreAutomatico(tempo) {
+    let contatore = 0;
 
-    return setInternal(() =>
-    
-    )
+    return function () {
+        setInterval(() => {
+            contatore++;
+            console.log(contatore);
+        }, tempo);
+    }
 }
+
+// Esempio di utilizzo:
+const avviaContatore = creaContatoreAutomatico(1000); // Avvia il contatore ogni 1000 ms (1 secondo)
+avviaContatore(); // Inizia a contare
