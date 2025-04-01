@@ -9,3 +9,6 @@ function createSomma(a, b) {
 
     return a + b
 }
+
+
+const createSomma = (a, b) => a + b
